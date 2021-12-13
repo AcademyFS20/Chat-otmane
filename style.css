@@ -15,6 +15,7 @@ html{
 :root
 {
     --color-heading:#ADB5BD;
+    --color-btn:#55A630;
 }
 #body-login
 {
@@ -44,6 +45,7 @@ html{
 #body-login .title2
 {
     text-align:center;
+    font-size:2.5rem;
 }
 #body-login .form
 {
@@ -59,4 +61,24 @@ html{
 {
     margin:10px auto;
     display:block;
+    background-color:var(--color-btn);
+    color:white;
+    font-weight:bold;
+    width:90%;
+    height:40px;
+    border-radius:50px;
+    border:2px solid var(--color-heading);
+}
+img[src="futur.png"]
+{
+    display:block;
+    margin:10px auto;
+}
+#login input[type="email"],#login input[type="password"]
+{
+    padding:20px;
+}
+#login input[type="email"]::placeholder,#login input[type="password"]::placeholder
+{
+    font-size:2rem;
 }

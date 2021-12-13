@@ -9,28 +9,38 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/628c8d2499.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Page Login</title>
+    <title>Page Sign up</title>
 </head>
-<body id="body-login">
+<body id="body-signup">
     <section id="text-login">
         <h2>Let's chat</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum et ligula vulputate vehicula. Aenean pharetra arcu bibendum tempus bibendum. Vestibulum lacinia dui quis gravida ultricies. Sed et nulla in magna cursus finibus ac eu erat. Donec faucibus dignissim libero ut placerat. Duis vestibulum eget dolor varius sollicitudin.</p>
     </section>
-    <section id="login">
+    <section id="signup">
         <img src="futur.png">
-        <h2 class="title2">Login</h2>
+        <h2 class="title2">SIGN UP</h2>
         <form class="form" action="POST">
+            <div class="form-group">
+                <input class="form-control" type="email" placeholder="Enter your full name" name="name">
+            </div>
             <div class="form-group">
                 <input class="form-control" type="email" placeholder="Enter your email" name="email">
             </div>
             <div class="form-group">
                 <input class="form-control" type="password" placeholder="Enter your password" name="pass">
             </div>
+            <!-- <div class="form-group">
+                <input class="form-control" type="file" value="Choose your avatar">
+            </div> -->
+            <div class="custom-file form-group">
+                <input type="file" class="custom-file-input" id="exampleInputFile">
+                <label class="custom-file-label" for="exampleInputFile" data-browse="choose your avatar"><i class="fas fa-cloud-download-alt" style="color:green;margin-left:100px;"></i></label>
+            </div>
             <div class="form-group">
-                <input type="submit" value="LOGIN">
+                <input type="submit" value="CREATE ACCOUNT">
             </div>
         </form>
-        <a href="#"><i class="fas fa-user"></i>Create an account?</a>
+        <a href="#"><i class="fas fa-user"></i>Already have an account?</a>
     </section>
 </body>
 </html>
